@@ -14,7 +14,8 @@ oc new-app 3scale-api-management-eval \
     -p TENANT_NAME=dfo-dmp \
     -p WILDCARD_DOMAIN=<openshift domain or ip> \
     -p ADMIN_PASSWORD=password \
-    -p MASTER_PASSWORD=password
+    -p MASTER_PASSWORD=password \
+    -p RWX_STORAGE_CLASS=azfsc
     
 
 # Once all the pods start, login to your new tentant admin portal at https://dfo-dmp-admin.<cluster url>

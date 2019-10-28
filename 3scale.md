@@ -9,17 +9,19 @@ oc create -f <registry access secret>
 
 oc create -f https://raw.githubusercontent.com/3scale/3scale-amp-openshift-templates/2.6.0.GA/amp/amp-eval-tech-preview.yml
 
+# This will probably also require a param for the RWO storage class, and maybe the Postgres version.
 oc new-app 3scale-api-management-eval \
     -p TENANT_NAME=dfo-dmp \
-    -p WILDCARD_DOMAIN=apps-crc.testing \
+    -p WILDCARD_DOMAIN=<openshift domain or ip> \
     -p ADMIN_PASSWORD=password \
     -p MASTER_PASSWORD=password
+    
 
 # Once all the pods start, login to your new tentant admin portal at https://dfo-dmp-admin.<cluster url>
 # Go to "Settings" (gear at top right) and copy your provider key, then import your first api!
 
 # Add -k if your portal has self-signed certs.
-3scale import openapi -k --default-credentials-userkey=user-key -d https://e71f7e233a9c058ddc2f9ba358ece71b@dfo-dmp-admin.apps-crc.testing https://petstore.swagger.io/v2/swagger.json
+3scale import openapi -k --default-credentials-userkey=user-key -d https://<provider key>@dfo-dmp-admin.apps-crc.testing https://petstore.swagger.io/v2/swagger.json
 
 # Refresh your admin portal and go to "Swagger Petstore API" Service.
 # Create an "Application Plan".  When you are done, make sure you publish it.

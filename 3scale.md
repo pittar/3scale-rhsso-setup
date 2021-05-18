@@ -89,7 +89,7 @@ oc set env dc/sso SSO_ADMIN_PASSWORD-
 
 1. In your 3Scale admin portal, click on the gear in the top right for `Account Settings`.
 2. In the left nav, click `Users -> SSO Integrations` and select `New SSO Integration -> Red Hat Single Sign-On`.
-3. Add your client (probably 3Scale) and your secret that you copied in Step 7 of the **Create a 3Scale Client** instructions.cccccckddnikfjkudhhherkbbfrvecceiltreltdduhl
+3. Add your client (probably 3Scale) and your secret that you copied in Step 7 of the **Create a 3Scale Client** instructions.
 4. Paste in your realm, which will look something like `https://sso-rh-sso.apps-crc.testing/auth/realms/3scale`
 5. Save
 6. If you have self-signed certificates, `edit` your configuration and ensure the **Do not verify SSL** checkbox is checked, then save.

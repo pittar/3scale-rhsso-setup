@@ -95,7 +95,7 @@ oc set env dc/sso SSO_ADMIN_PASSWORD-
 6. If you have self-signed certificates, `edit` your configuration and ensure the **Do not verify SSL** checkbox is checked, then save.
 7. Click the `Test Authentication Flow` link and sign-in with your Azure AD.  Upon successful authentication you will be prompted to create your account.
 8. Once complete, you can "Publish" your SSO integration.
-9. In order to make your new user an admin that can login, you will need to login to your **masetr** portal and approve the user.
+9. In order to make your new user an admin that can login, you will need to login to your **master** portal and approve the user.
 
 ## Setup 3Scale Developer Portal to use RH SSO
 

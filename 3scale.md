@@ -69,9 +69,10 @@ oc set env dc/sso SSO_ADMIN_PASSWORD-
 4. In Azure Portal, go to `Azure Active Diretory -> App Registrations -> New Registration`
 5. Give your app a name and paste the Redirect URI into the text box near the bottom of the screen beside `Web`, then click **Register**.
 6. Copy the `Application (Client) ID` and paste it into the appropriate field in Red Hat SSO for your new OpenID Connect provider.
-7. Back in Azure, at the top of the screen click on `Endpoints` and copy the `OpenID Connect metadata document` link, then paste it into the `Import from URL` text boc in Red Hat SSO and click the **Import** button that will appear below this text box.
-8. Back in Azure, click on `Certificates and Secrets` from the left nav.  Generate a new **Client Secret** (expire never).  Copy the value and paste it into the `Client Secret` text box in Red Hat SSO.
-9. In Red Hat SSO, click **Save**.
+7. Back in Azure, at the top of the screen click on `Endpoints` and copy the `OpenID Connect metadata document` link, then paste it into the `Import from URL` text boc in Red Hat SSO
+8. Click the **Import** button that will appear below this text box.
+9. Back in Azure, click on `Certificates and Secrets` from the left nav.  Generate a new **Client Secret** (expire never).  Copy the value and paste it into the `Client Secret` text box in Red Hat SSO.
+10. In Red Hat SSO, click **Save**.
 
 ## Create a 3Scale Client
 

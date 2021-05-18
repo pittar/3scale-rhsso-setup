@@ -77,12 +77,13 @@ oc set env dc/sso SSO_ADMIN_PASSWORD-
 ## Create a 3Scale Client
 
 1. In your 3Scale Realm in Red Hat SSO, click on `Clients` from the left nav, then `Create Client`.
-2. Chose a `Client ID` (e.g. 3scale) and make sure `openid-connect` is selected, then create.
-3. Change the access type to `confidential`.
-4. Set valid redirect urls for your admin and developer portals, for example https://dfo-dmp-admin.apps-crc.testing/* and https://dfo-dmp.apps-crc.testing/*
-5. For `Web Origins` add `*`
-6. Save
-7. Scroll to the top and click the `Credentials` tab (which should now be there).  Copy the secret.
+2. Chose a `Client ID` (e.g. 3scale) and make sure `openid-connect` is selected
+3. Click **Save**.
+4. Change the access type to `confidential`.
+5. Set valid redirect urls for your admin and developer portals, for example https://dfo-dmp-admin.apps-crc.testing/* and https://dfo-dmp.apps-crc.testing/*
+6. For `Web Origins` add `*`
+7. Save
+8. Scroll to the top and click the `Credentials` tab (which should now be there).  Copy the secret.
 
 ## Setup 3Scale admin portal to use RH SSO
 
